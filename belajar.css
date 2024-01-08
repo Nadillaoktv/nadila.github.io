@@ -25,6 +25,19 @@ header p {
 }
 
 
+.container {
+    width: 1300px;
+    height: auto;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .slide1 {
     margin-top: 100px;
@@ -42,6 +55,8 @@ header p {
 
 aside img {
     width: 200px;
+    height: auto;
+    min-height: 30vh;
     border-radius: 50%;
     margin-left: 800px;
     position: absolute;
@@ -55,9 +70,9 @@ body {
 }
 
 .aside1 h1{
-    text-align: center;
-    margin-left: 380px;
+    margin-left: 700px;
     font-size: 70px;
+    align-items: center;
 }
 
 .aside1 span {
@@ -67,6 +82,7 @@ body {
 .aside1 h2 {
     margin-left: 700px;
     font-size: 50px;
+    align-items: center;
 }
 
 .aside1 button {
@@ -225,18 +241,8 @@ footer h1 {
 
 /*responsive*/
 
-@media screen and(max-width: 768px){
-    main {
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       display: flex;
-   }
-   .profile h1 {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       width: 78%;
-   }
+@media screen and(max-width: 460px){
+    .body {
+            background-color: aqua;
+        }
    }
